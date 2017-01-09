@@ -25,3 +25,4 @@ with_auth_request: true
 with_addition: true
 with_gunzip: true
 with_postgres: true
+with_http2: true

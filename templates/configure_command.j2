@@ -29,6 +29,7 @@ mkdir /var/lib/nginx
 {% if with_addition %} --with-http_addition_module {% endif %}
 {% if with_gunzip %} --with-http_gunzip_module {% endif %}
 {% if with_postgres %} --with-http_postgres_module {% endif %}
+{% if with_http2 %} --with-http_v2_module {% endif %}
 --http-client-body-temp-path=/var/lib/nginx/body \
 --http-fastcgi-temp-path=/var/lib/nginx/fastcgi \
 --http-log-path=/var/log/nginx/access.log \
